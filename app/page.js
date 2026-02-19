@@ -2,7 +2,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
-import { Nanum_Pen_Script, Rampart_One } from "next/font/google";
 
 export default function IDTConexiones() {
   const phoneNumber = "541163091866";
