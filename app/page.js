@@ -22,7 +22,7 @@ export default function IDTConexiones() {
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-4">
             <img
-              src="/logo-idt.png" /* Reemplazar con tu archivo real */
+              src="/logo-idt.webp" /* Reemplazar con tu archivo real */
               alt="IDT Conexiones Logo"
               className="h-12 object-contain"
             />
