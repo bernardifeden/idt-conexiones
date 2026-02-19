@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Nanum_Pen_Script, Rampart_One } from "next/font/google";
 
@@ -53,9 +51,8 @@ export default function IDTConexiones() {
             Internet propio • Starlink • Cámaras • Redes Empresariales • Soporte Técnico
           </p>
           <a href="#contacto">
-            <Button className="rounded-2xl px-10 py-6 text-lg bg-black text-white hover:bg-gray-800">
-              Solicitar Presupuesto
-            </Button>
+            <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+</button>
           </a>
         </div>
       </section>
@@ -87,12 +84,13 @@ export default function IDTConexiones() {
                 desc: "Asistencia técnica profesional para infraestructura tecnológica."
               }
             ].map((service, index) => (
-              <Card key={index} className="rounded-2xl shadow-md hover:shadow-xl transition-all">
-                <CardContent className="p-8">
-                  <h4 className="text-xl font-semibold mb-4">{service.title}</h4>
+              <div className="bg-white shadow-lg rounded-xl p-6">
+              
+              <h4 className="text-xl font-semibold mb-4">{service.title}</h4>
                   <p className="text-gray-600">{service.desc}</p>
-                </CardContent>
-              </Card>
+                
+              </div>
+
             ))}
           </div>
         </div>
