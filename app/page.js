@@ -1,6 +1,13 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+const MotionH2 = dynamic(
+  () =>
+    import("framer-motion").then((mod) => {
+      return mod.motion.h2;
+    }),
+  { ssr: false }
+);
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
 export default function IDTConexiones() {
@@ -39,14 +46,15 @@ export default function IDTConexiones() {
       {/* Hero */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-5xl mx-auto text-center">
-          <motion.h2
+          <MotionH2
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             className="text-4xl md:text-6xl font-bold mb-6 tracking-wide"
           >
             CONECTIVIDAD PROFESIONAL
-          </motion.h2>
+          </MotionH2>
+
           <p className="text-lg md:text-xl mb-8 text-gray-600">
             Internet propio • Starlink • Cámaras • Redes Empresariales • Soporte Técnico
           </p>
@@ -56,6 +64,7 @@ export default function IDTConexiones() {
           </a>
         </div>
       </section>
+
 
       {/* Servicios */}
       <section id="servicios" className="py-24 px-6 bg-gray-50">
@@ -150,9 +159,13 @@ export default function IDTConexiones() {
               ></textarea>
             </div>
 
-            <Button type="submit" className="w-full rounded-2xl py-6 text-lg bg-black text-white hover:bg-gray-800">
-              Enviar Mensaje
-            </Button>
+            <button
+  type="submit"
+  className="w-full rounded-2xl py-6 text-lg bg-black text-white hover:bg-gray-800"
+>
+  Enviar Mensaje
+</button>
+
           </form>
 
           <div className="grid md:grid-cols-3 gap-8 text-center mt-16">
