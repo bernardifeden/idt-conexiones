@@ -104,7 +104,9 @@ export default function IDTConexiones() {
           <p className="text-lg text-gray-600 leading-relaxed">
             Brindamos soluciones profesionales en conectividad, videovigilancia y redes empresariales.
             Trabajamos con compromiso, tecnología de vanguardia y atención personalizada en
-            Exaltación de la Cruz y alrededores.
+            Exaltación de la Cruz y alrededores, más de diez años de experiencia avalan el trabajo realizado en varias localidades de argentina 
+            y muchismos clientes nos recomiendan dia a dia,
+            no te quedes esperando soluciones magicas ni servicios tecnicos que demoran meses en visitar tu domicilio contactanos hoy y te responderemos a la brevedad.
           </p>
         </div>
       </section>
