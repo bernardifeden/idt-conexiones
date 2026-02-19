@@ -17,23 +17,28 @@ export default function IDTConexiones() {
         <MessageCircle className="w-7 h-7" />
       </a>
 
-      {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-40">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-4">
-            <img
-              src="/logo-idt.webp" /* Reemplazar con tu archivo real */
-              alt="IDT Conexiones Logo"
-              className="h-12 object-contain"
-            />
-          </div>
-          <nav className="space-x-6 hidden md:block font-medium">
-            <a href="#servicios" className="hover:text-gray-600">Servicios</a>
-            <a href="#nosotros" className="hover:text-gray-600">Nosotros</a>
-            <a href="#contacto" className="hover:text-gray-600">Contacto</a>
-          </nav>
-        </div>
-      </header>
+     <header className="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+  <div className="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+
+    {/* Logo */}
+    <a href="#inicio" className="flex items-center">
+      <img
+        src="/logo-idt.webp"
+        alt="IDT Conexiones Logo"
+        className="h-20 object-contain"
+      />
+    </a>
+
+    {/* Navegación */}
+    <nav className="space-x-8 hidden md:block font-medium text-gray-700">
+      <a href="#servicios" className="hover:text-black transition">Servicios</a>
+      <a href="#nosotros" className="hover:text-black transition">Nosotros</a>
+      <a href="#contacto" className="hover:text-black transition">Contacto</a>
+    </nav>
+
+  </div>
+</header>
+
 
      {/* Hero */}
 <section className="bg-white py-24 px-6">
