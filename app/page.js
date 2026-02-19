@@ -1,16 +1,7 @@
-"use client";
-export const dynamic = "force-dynamic";
-import React from "react";
-import dynamic from "next/dynamic";
-const MotionH2 = dynamic(
-  () =>
-    import("framer-motion").then((mod) => {
-      return mod.motion.h2;
-    }),
-  { ssr: false }
-);
-import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 
+import React from "react";
+import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import HeroTitle from "../components/HeroTitle";
 export default function IDTConexiones() {
   const phoneNumber = "541163091866";
 
@@ -44,29 +35,24 @@ export default function IDTConexiones() {
         </div>
       </header>
 
-      {/* Hero */}
-      <section className="bg-white py-24 px-6">
-        <div className="max-w-5xl mx-auto text-center">
-          <MotionH2
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="text-4xl md:text-6xl font-bold mb-6 tracking-wide"
-          >
-            CONECTIVIDAD PROFESIONAL
-          </MotionH2>
+     {/* Hero */}
+<section className="bg-white py-24 px-6">
+  <div className="max-w-5xl mx-auto text-center">
 
-          <p className="text-lg md:text-xl mb-8 text-gray-600">
-            Internet propio • Starlink • Cámaras • Redes Empresariales • Soporte Técnico
-          </p>
-          <a href="#contacto">
-            <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
-</button>
-          </a>
-        </div>
-      </section>
+    <HeroTitle />
 
+    <p className="text-lg md:text-xl mb-8 text-gray-600">
+      Internet propio • Starlink • Cámaras • Redes Empresariales • Soporte Técnico
+    </p>
 
+    <a href="#contacto">
+      <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
+        Contactar
+      </button>
+    </a>
+
+  </div>
+</section>
       {/* Servicios */}
       <section id="servicios" className="py-24 px-6 bg-gray-50">
         <div className="max-w-6xl mx-auto">
