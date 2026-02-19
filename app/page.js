@@ -4,7 +4,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { Nanum_Pen_Script, Rampart_One } from "next/font/google";
-import { init } from "next/dist/compiled/webpack/webpack";
 
 export default function IDTConexiones() {
   const phoneNumber = "541163091866";
@@ -69,7 +68,7 @@ export default function IDTConexiones() {
             {[
               {
                 title: "Servicio de Internet",
-                desc: "Internet propio de alta estabilidad en Exaltación de la Cruz y zonas cercanas."
+                desc: "Internet personal de alta estabilidad en Exaltación de la Cruz y zonas cercanas."
               },
               {
                 title: "Internet con Starlink",
