@@ -1,7 +1,15 @@
 // deploy fix
 import React from "react";
-import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
-import HeroTitle from "../components/HeroTitle";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  MessageCircle,
+  Wifi,
+  Shield,
+  Camera,
+  Network
+} from "lucide-react";
 export default function IDTConexiones() {
   const phoneNumber = "541163091866";
 
@@ -9,13 +17,13 @@ export default function IDTConexiones() {
     <div className="min-h-screen bg-white text-black relative">
       {/* Botón flotante WhatsApp */}
       <a
-        href={`https://wa.me/${phoneNumber}`}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-black hover:bg-gray-800 text-white p-4 rounded-full shadow-xl z-50"
-      >
-        <MessageCircle className="w-7 h-7" />
-      </a>
+  href={`https://wa.me/${phoneNumber}?text=Hola,%20quiero%20consultar%20por%20sus%20servicios`}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 animate-bounce"
+>
+  <MessageCircle className="w-7 h-7" />
+</a>
 
      <header className="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
   <div className="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
@@ -38,66 +46,84 @@ export default function IDTConexiones() {
 
   </div>
 </header>
+{/* Hero */}
+<section className="relative bg-black text-white py-32 px-6 overflow-hidden">
+  <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-20"></div>
 
+  <div className="relative max-w-5xl mx-auto text-center">
+    <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+      Soluciones Profesionales en Seguridad y Conectividad
+    </h1>
 
-     {/* Hero */}
-<section className="bg-white py-24 px-6">
-  <div className="max-w-5xl mx-auto text-center">
-
-    <HeroTitle />
-
-    <p className="text-lg md:text-xl mb-8 text-gray-600">
+    <p className="text-lg md:text-xl mb-10 text-gray-300">
       Internet propio • Starlink • Cámaras • Redes Empresariales • Soporte Técnico
     </p>
 
-    <a href="#contacto">
-      <button className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition">
-        Contactar
-      </button>
-    </a>
-
+    <div className="flex justify-center gap-6 flex-wrap">
+      <a
+        href={`https://wa.me/${phoneNumber}?text=Hola,%20quiero%20consultar%20por%20sus%20servicios`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition">
+          Solicitar Presupuesto
+        </button>
+      </a>
+      <a href="#servicios">
+        <button className="border border-white px-6 py-3 rounded-xl hover:bg-white hover:text-black transition">
+          Ver Servicios
+        </button>
+      </a>
+    </div>
   </div>
 </section>
-      {/* Servicios */}
-      <section id="servicios" className="py-24 px-6 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-center mb-16 tracking-wide">Nuestros Servicios</h3>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Servicio de Internet",
-                desc: "Internet personal de alta estabilidad en Exaltación de la Cruz y zonas cercanas."
-              },
-              {
-                title: "Internet con Starlink",
-                desc: "Instalación y soporte de Starlink como respaldo o solución alternativa."
-              },
-              {
-                title: "Cámaras de Seguridad",
-                desc: "Venta, instalación y reparación de sistemas de videovigilancia."
-              },
-              {
-                title: "Redes Empresariales",
-                desc: "Diseño e implementación de redes corporativas seguras y eficientes."
-              },
-              {
-                title: "Soporte Técnico Especializado",
-                desc: "Asistencia técnica profesional para infraestructura tecnológica."
-              }
-            ].map((service, index) => (
-              <div className="bg-white shadow-lg rounded-xl p-6">
-              
-              <h4 className="text-xl font-semibold mb-4">{service.title}</h4>
-                  <p className="text-gray-600">{service.desc}</p>
-                
-              </div>
+{/* Servicios */}
+<section id="servicios" className="py-24 px-6 bg-gray-50">
+  <div className="max-w-6xl mx-auto">
+    <h3 className="text-3xl font-bold text-center mb-16 tracking-wide">
+      Nuestros Servicios
+    </h3>
 
-            ))}
-          </div>
+    <div className="grid md:grid-cols-3 gap-8">
+      {[
+        {
+          icon: <Wifi className="w-10 h-10 mb-4 text-black" />,
+          title: "Servicio de Internet",
+          desc: "Internet personal de alta estabilidad en Exaltación de la Cruz y zonas cercanas."
+        },
+        {
+          icon: <Shield className="w-10 h-10 mb-4 text-black" />,
+          title: "Internet con Starlink",
+          desc: "Instalación y soporte de Starlink como respaldo o solución alternativa."
+        },
+        {
+          icon: <Camera className="w-10 h-10 mb-4 text-black" />,
+          title: "Cámaras de Seguridad",
+          desc: "Venta, instalación y reparación de sistemas de videovigilancia."
+        },
+        {
+          icon: <Network className="w-10 h-10 mb-4 text-black" />,
+          title: "Redes Empresariales",
+          desc: "Diseño e implementación de redes corporativas seguras y eficientes."
+        }
+      ].map((service, index) => (
+        <div
+          key={index}
+          className="bg-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition duration-300 hover:-translate-y-2"
+        >
+          {service.icon}
+          <h4 className="text-xl font-semibold mb-4">
+            {service.title}
+          </h4>
+          <p className="text-gray-600">
+            {service.desc}
+          </p>
         </div>
-      </section>
-
-      {/* Nosotros */}
+      ))}
+    </div>
+  </div>
+</section>
+    {/* Nosotros */}
       <section id="nosotros" className="py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h3 className="text-3xl font-bold mb-6 tracking-wide">Sobre IDT CONEXIONES</h3>
@@ -110,7 +136,31 @@ export default function IDTConexiones() {
           </p>
         </div>
       </section>
+{/* Galería */}
+<section className="py-24 px-6 bg-white">
+  <div className="max-w-6xl mx-auto">
+    <h3 className="text-3xl font-bold text-center mb-16">
+      Trabajos Realizados
+    </h3>
 
+    <div className="grid md:grid-cols-3 gap-6">
+      {["/trabajo1.jpg", "/trabajo2.jpg", "/trabajo3.jpg"].map(
+        (img, index) => (
+          <div
+            key={index}
+            className="overflow-hidden rounded-2xl shadow-lg"
+          >
+            <img
+              src={img}
+              alt="Trabajo realizado"
+              className="w-full h-64 object-cover hover:scale-110 transition duration-500"
+            />
+          </div>
+        )
+      )}
+    </div>
+  </div>
+</section>
       {/* Contacto */}
       <section id="contacto" className="py-24 px-6 bg-gray-50">
         <div className="max-w-3xl mx-auto">
@@ -185,7 +235,7 @@ export default function IDTConexiones() {
       </footer>
     </div>
   );
-}
+  }
 
 
 
