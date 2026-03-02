@@ -1,5 +1,3 @@
-// deploy fix
-import React from "react";
 import {
   Phone,
   Mail,
@@ -12,9 +10,11 @@ import {
 } from "lucide-react";
 
 export default function IDTConexiones() {
+
   const phoneNumber = "541163091866";
 
   return (
+
     <div className="min-h-screen bg-white text-black relative">
 
       {/* Botón flotante WhatsApp */}
@@ -29,9 +29,10 @@ export default function IDTConexiones() {
 
       {/* Header */}
       <header className="bg-white sticky top-0 z-50 border-b border-gray-100 shadow-sm">
+
         <div className="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
 
-          <a href="#inicio" className="flex items-center">
+          <a href="#inicio">
             <img
               src="/logo-idt.webp"
               alt="IDT Conexiones Logo"
@@ -51,10 +52,12 @@ export default function IDTConexiones() {
 
       {/* Hero */}
       <section className="relative bg-black text-white py-32 px-6 overflow-hidden">
+
         <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center opacity-20"></div>
 
         <div className="relative max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+
+          <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Soluciones Profesionales en Seguridad y Conectividad
           </h1>
 
@@ -63,6 +66,7 @@ export default function IDTConexiones() {
           </p>
 
           <div className="flex justify-center gap-6 flex-wrap">
+
             <a
               href={`https://wa.me/${phoneNumber}?text=Hola,%20quiero%20consultar%20por%20sus%20servicios`}
               target="_blank"
@@ -78,14 +82,19 @@ export default function IDTConexiones() {
                 Ver Servicios
               </button>
             </a>
+
           </div>
+
         </div>
       </section>
 
+
       {/* Servicios */}
       <section id="servicios" className="py-24 px-6 bg-gray-50">
+
         <div className="max-w-6xl mx-auto">
-          <h3 className="text-3xl font-bold text-center mb-16 tracking-wide">
+
+          <h3 className="text-3xl font-bold text-center mb-16">
             Nuestros Servicios
           </h3>
 
@@ -93,319 +102,130 @@ export default function IDTConexiones() {
 
             {[
               {
-                icon: <Wifi className="w-10 h-10 mb-4 text-black" />,
+                icon: <Wifi className="w-10 h-10 mb-4" />,
                 title: "Servicio de Internet",
                 desc: "Internet personal de alta estabilidad en Exaltación de la Cruz y zonas cercanas."
               },
               {
-                icon: <Shield className="w-10 h-10 mb-4 text-black" />,
+                icon: <Shield className="w-10 h-10 mb-4" />,
                 title: "Internet con Starlink",
-                desc: "Instalación y soporte de Starlink como respaldo o solución alternativa."
+                desc: "Instalación y soporte profesional de Starlink."
               },
               {
-                icon: <Camera className="w-10 h-10 mb-4 text-black" />,
+                icon: <Camera className="w-10 h-10 mb-4" />,
                 title: "Cámaras de Seguridad",
-                desc: "Venta, instalación y reparación de sistemas de videovigilancia."
+                desc: "Venta, instalación y configuración de sistemas de videovigilancia."
               },
               {
-                icon: <Network className="w-10 h-10 mb-4 text-black" />,
+                icon: <Network className="w-10 h-10 mb-4" />,
                 title: "Redes Empresariales",
-                desc: "Diseño e implementación de redes corporativas seguras y eficientes."
+                desc: "Diseño e implementación de redes seguras y estables."
               }
-            ].map((service, index) => (
+            ].map((service,index)=>(
+              
+              <div key={index} className="bg-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition">
 
-              <div
-                key={index}
-                className="bg-white shadow-lg rounded-2xl p-8 hover:shadow-2xl transition duration-300 hover:-translate-y-2"
-              >
                 {service.icon}
+
                 <h4 className="text-xl font-semibold mb-4">
                   {service.title}
                 </h4>
+
                 <p className="text-gray-600">
                   {service.desc}
                 </p>
+
               </div>
 
             ))}
 
           </div>
+
         </div>
+
       </section>
-{/* Equipos */}
-<section id="equipos" className="py-24 px-6 bg-white">
-<div className="max-w-6xl mx-auto">
 
-<h3 className="text-3xl font-bold text-center mb-6">
-Cámaras, Starlink y Equipos de Internet Recomendados
-</h3>
 
-<p className="text-center text-gray-600 mb-16 max-w-3xl mx-auto">
-Equipos seleccionados y probados en instalaciones reales realizadas por IDT Conexiones.
-Las compras se realizan a través de Mercado Libre para garantizar seguridad en el pago y envío.
-</p>
+      {/* Equipos */}
+      <section id="equipos" className="py-24 px-6 bg-white">
 
-<div className="grid md:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto">
 
-{/* Bullet 4MP */}
-<div className="bg-gray-50 shadow-lg rounded-2xl p-6">
-<img
-src="/equipos/bullet4MP.jpg"
-className="rounded-xl mb-4 w-full h-48 object-contain"
-alt="Camara Imou Bullet 4MP"
-/>
+          <h3 className="text-3xl font-bold text-center mb-6">
+            Equipos Recomendados
+          </h3>
 
-<h4 className="text-xl font-semibold mb-2">
-IMOU Bullet 4MP
-</h4>
+          <p className="text-center text-gray-600 mb-16 max-w-3xl mx-auto">
+            Equipos seleccionados y probados en instalaciones reales realizadas por IDT Conexiones.
+          </p>
 
-<a
-href="https://meli.la/2Mf4wWP"
-target="_blank"
-rel="noopener noreferrer"
-className="bg-black text-white px-4 py-2 rounded-xl inline-block"
->
-Ver producto
-</a>
-</div>
+          <div className="grid md:grid-cols-3 gap-8">
 
-{/* Bullet 5MP */}
-<div className="bg-gray-50 shadow-lg rounded-2xl p-6">
-<img
-src="/equipos/Bullet5MP.jpg"
-className="rounded-xl mb-4 w-full h-48 object-contain"
-alt="Camara Imou Bullet 5MP"
-/>
+            {[
+              {img:"bullet4MP.jpg",title:"IMOU Bullet 4MP",link:"https://meli.la/2Mf4wWP"},
+              {img:"bullet5MP.jpg",title:"IMOU Bullet 5MP",link:"https://meli.la/2Mf4wWP"},
+              {img:"domo4y5mp.jpg",title:"IMOU Cruiser",link:"https://meli.la/1xWysps"},
+              {img:"domodual.webp",title:"IMOU Cruiser Dual",link:"https://meli.la/2bNuHuU"},
+              {img:"ranger4mp.webp",title:"IMOU Ranger 4MP",link:"https://meli.la/2vz4KWN"},
+              {img:"cell3i.webp",title:"IMOU Cell Solar",link:"https://meli.la/1xdFTvF"},
+              {img:"imouaov5mp4G.webp",title:"IMOU AOV Solar 4G",link:"https://meli.la/1xPC4qJ"},
+              {img:"lhgxl27dbi.png",title:"Mikrotik LHG XL",link:"https://articulo.mercadolibre.com.ar/MLA-2898557742"},
+              {img:"disc.jpg",title:"Mikrotik Disc Lite5",link:"https://articulo.mercadolibre.com.ar/MLA-2898557742"},
+              {img:"minix.jpg",title:"Starlink Mini",link:"https://meli.la/1oZkyud"},
+              {img:"standardv4.jpg",title:"Starlink Standard V4",link:"https://meli.la/1ysCKtL"}
+            ].map((item,index)=>(
+              
+              <div key={index} className="bg-gray-50 shadow-lg rounded-2xl p-6">
 
-<h4 className="text-xl font-semibold mb-2">
-IMOU Bullet 5MP
-</h4>
+                <img
+                  src={`/${item.img}`}
+                  className="rounded-xl mb-4 w-full h-48 object-contain"
+                  alt={item.title}
+                />
 
-<a
-href="https://meli.la/2Mf4wWP"
-target="_blank"
-rel="noopener noreferrer"
-className="bg-black text-white px-4 py-2 rounded-xl inline-block"
->
-Ver producto
-</a>
-</div>
+                <h4 className="text-xl font-semibold mb-2">
+                  {item.title}
+                </h4>
 
-{/* Cruiser */}
-<div className="bg-gray-50 shadow-lg rounded-2xl p-6">
-<img
-src="/equipos/domo4y5mp.jpg"
-className="rounded-xl mb-4 w-full h-48 object-contain"
-alt="Camara Imou Cruiser"
-/>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-black text-white px-4 py-2 rounded-xl inline-block"
+                >
+                  Ver producto
+                </a>
 
-<h4 className="text-xl font-semibold mb-2">
-IMOU Cruiser
-</h4>
+              </div>
 
-<a
-href="https://meli.la/1xWysps"
-target="_blank"
-rel="noopener noreferrer"
-className="bg-black text-white px-4 py-2 rounded-xl inline-block"
->
-Ver producto
-</a>
-</div>
+            ))}
 
-{/* Cruiser Dual */}
-<div className="bg-gray-50 shadow-lg rounded-2xl p-6">
-<img
-src="/equipos/domodual.webp"
-className="rounded-xl mb-4 w-full h-48 object-contain"
-alt="Camara Imou Cruiser Dual"
-/>
+          </div>
 
-<h4 className="text-xl font-semibold mb-2">
-IMOU Cruiser Dual
-</h4>
 
-<a
-href="https://meli.la/2bNuHuU"
-target="_blank"
-rel="noopener noreferrer"
-className="bg-black text-white px-4 py-2 rounded-xl inline-block"
->
-Ver producto
-</a>
-</div>
+          {/* Asistencia remota */}
+          <div className="text-center mt-16">
 
-{/* Ranger */}
-<div className="bg-gray-50 shadow-lg rounded-2xl p-6">
-<img
-src="/equipos/ranger4mp.webp"
-className="rounded-xl mb-4 w-full h-48 object-contain"
-alt="Camara Imou Ranger"
-/>
+            <p className="mb-6 text-lg">
+              ¿Compraste un equipo y necesitás ayuda para configurarlo?
+            </p>
 
-<h4 className="text-xl font-semibold mb-2">
-IMOU Ranger 4MP
-</h4>
+            <a
+              href={`https://wa.me/${phoneNumber}?text=Hola,%20necesito%20ayuda%20para%20configurar%20un%20equipo`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold"
+            >
+              Configurar mi equipo
+            </a>
 
-<a
-href="https://meli.la/2vz4KWN"
-target="_blank"
-rel="noopener noreferrer"
-className="bg-black text-white px-4 py-2 rounded-xl inline-block"
->
-Ver producto
-</a>
-</div>
+          </div>
 
-{/* Cell Solar */}
-<div className="bg-gray-50 shadow-lg rounded-2xl p-6">
-<img
-src="/equipos/cell3i.webp"
-className="rounded-xl mb-4 w-full h-48 object-contain"
-alt="Camara Imou Cell Solar"
-/>
+        </div>
 
-<h4 className="text-xl font-semibold mb-2">
-IMOU Cell Solar
-</h4>
+      </section>
 
-<a
-href="https://meli.la/1xdFTvF"
-target="_blank"
-rel="noopener noreferrer"
-className="bg-black text-white px-4 py-2 rounded-xl inline-block"
->
-Ver producto
-</a>
-</div>
+    </div>
 
-{/* AOV Solar */}
-<div className="bg-gray-50 shadow-lg rounded-2xl p-6">
-<img
-src="/equipos/imouaov5mp4G.webp"
-className="rounded-xl mb-4 w-full h-48 object-contain"
-alt="Camara Imou AOV Solar"
-/>
-
-<h4 className="text-xl font-semibold mb-2">
-IMOU AOV Solar 4G
-</h4>
-
-<a
-href="https://meli.la/1xPC4qJ"
-target="_blank"
-rel="noopener noreferrer"
-className="bg-black text-white px-4 py-2 rounded-xl inline-block"
->
-Ver producto
-</a>
-</div>
-
-{/* Mikrotik LHG */}
-<div className="bg-gray-50 shadow-lg rounded-2xl p-6">
-<img
-src="/equipos/lhgxl27dbi.png"
-className="rounded-xl mb-4 w-full h-48 object-contain"
-alt="Mikrotik LHG XL"
-/>
-
-<h4 className="text-xl font-semibold mb-2">
-Mikrotik LHG XL
-</h4>
-
-<a
-href="https://articulo.mercadolibre.com.ar/MLA-2898557742"
-target="_blank"
-rel="noopener noreferrer"
-className="bg-black text-white px-4 py-2 rounded-xl inline-block"
->
-Ver producto
-</a>
-</div>
-
-{/* Mikrotik Disc */}
-<div className="bg-gray-50 shadow-lg rounded-2xl p-6">
-<img
-src="/equipos/disc.jpg"
-className="rounded-xl mb-4 w-full h-48 object-contain"
-alt="Mikrotik Disc Lite5"
-/>
-
-<h4 className="text-xl font-semibold mb-2">
-Mikrotik Disc Lite5
-</h4>
-
-<a
-href="https://articulo.mercadolibre.com.ar/MLA-2898557742"
-target="_blank"
-rel="noopener noreferrer"
-className="bg-black text-white px-4 py-2 rounded-xl inline-block"
->
-Ver producto
-</a>
-</div>
-
-{/* Starlink Mini */}
-<div className="bg-gray-50 shadow-lg rounded-2xl p-6">
-<img
-src="/equipos/minix.jpg"
-className="rounded-xl mb-4 w-full h-48 object-contain"
-alt="Starlink Mini"
-/>
-
-<h4 className="text-xl font-semibold mb-2">
-Starlink Mini
-</h4>
-
-<a
-href="https://meli.la/1oZkyud"
-target="_blank"
-rel="noopener noreferrer"
-className="bg-black text-white px-4 py-2 rounded-xl inline-block"
->
-Ver producto
-</a>
-</div>
-
-{/* Starlink Standard */}
-<div className="bg-gray-50 shadow-lg rounded-2xl p-6">
-<img
-src="/equipos/standardv4.jpg"
-className="rounded-xl mb-4 w-full h-48 object-contain"
-alt="Starlink Standard V4"
-/>
-
-<h4 className="text-xl font-semibold mb-2">
-Starlink Standard V4
-</h4>
-
-<a
-href="https://meli.la/1ysCKtL"
-target="_blank"
-rel="noopener noreferrer"
-className="bg-black text-white px-4 py-2 rounded-xl inline-block"
->
-Ver producto
-</a>
-</div>
-
-</div>
-
-{/* Asistencia remota */}
-<div className="text-center mt-16">
-<p className="mb-6 text-lg">
-¿Compraste un equipo y necesitás ayuda para configurarlo?
-</p>
-
-<a
-href={`https://wa.me/${phoneNumber}?text=Hola,%20necesito%20ayuda%20para%20configurar%20un%20equipo`}
-target="_blank"
-rel="noopener noreferrer"
-className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl font-semibold"
->
-Configurar mi equipo
-</a>
-</div>
-
-</div>
-</section>
+  );
+}
