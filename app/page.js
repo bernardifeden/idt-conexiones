@@ -144,8 +144,46 @@ export default function IDTConexiones() {
         </div>
 
       </section>
+<div className="max-w-4xl mx-auto mt-20 text-gray-700 text-center leading-relaxed">
+<p className="mb-4">
+En <strong>IDT Conexiones</strong> trabajamos con equipos de conectividad y seguridad que utilizamos diariamente en nuestras instalaciones reales.
+Seleccionamos cámaras de seguridad, sistemas Starlink y equipos Mikrotik que ofrecen estabilidad, calidad de imagen y confiabilidad para hogares, empresas y zonas rurales.
+</p>
 
+<p className="mb-4">
+Todos los productos recomendados fueron previamente probados por nuestro equipo técnico en redes inalámbricas, enlaces de larga distancia, sistemas de videovigilancia y soluciones de internet rural.
+</p>
 
+<p>
+Si necesitás asesoramiento para elegir el equipo adecuado o ayuda para la instalación y configuración, podés contactarnos directamente y te ayudaremos a encontrar la mejor solución para tu caso.
+</p>
+</div>
+<section id="nosotros" className="py-24 px-6 bg-white">
+<div className="max-w-5xl mx-auto text-center">
+
+<h3 className="text-3xl font-bold mb-10">
+Sobre IDT Conexiones
+</h3>
+
+<p className="text-gray-600 leading-relaxed mb-6">
+IDT Conexiones es un emprendimiento técnico especializado en soluciones de conectividad,
+internet rural, instalación de cámaras de seguridad y redes inalámbricas profesionales.
+</p>
+
+<p className="text-gray-600 leading-relaxed mb-6">
+Trabajamos principalmente en Capilla del Señor, Exaltación de la Cruz y zonas cercanas,
+brindando instalación, soporte técnico y asesoramiento para hogares, empresas y
+establecimientos rurales que necesitan conectividad estable y sistemas de seguridad confiables.
+</p>
+
+<p className="text-gray-600 leading-relaxed">
+Nuestro objetivo es ofrecer soluciones reales utilizando equipos probados en campo como
+Mikrotik, Starlink y sistemas de videovigilancia modernos, garantizando estabilidad,
+rendimiento y soporte técnico directo.
+</p>
+
+</div>
+</section>
       {/* Equipos */}
       <section id="equipos" className="py-24 px-6 bg-white">
 
