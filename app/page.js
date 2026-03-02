@@ -46,78 +46,9 @@ export default function IDTConexiones() {
             <a href="#nosotros" className="hover:text-black transition">Nosotros</a>
             <a href="#contacto" className="hover:text-black transition">Contacto</a>
           </nav>
-{/* Contacto */}
-<section id="contacto" className="py-24 px-6 bg-gray-50">
-  <div className="max-w-5xl mx-auto text-center">
 
-    <h3 className="text-3xl font-bold mb-6">
-      Contacto
-    </h3>
-
-    <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-      Si necesitás asesoramiento, instalación o presupuesto para internet,
-      cámaras de seguridad o redes, podés comunicarte directamente con nosotros.
-      Trabajamos en Capilla del Señor, Exaltación de la Cruz y zonas cercanas.
-    </p>
-
-    <div className="grid md:grid-cols-3 gap-8 text-center">
-
-      {/* WhatsApp */}
-      <div className="bg-white rounded-2xl shadow-lg p-8">
-        <h4 className="font-semibold text-lg mb-2">
-          WhatsApp
-        </h4>
-
-        <p className="text-gray-600 mb-4">
-          Atención directa para consultas y presupuestos.
-        </p>
-
-        <a
-          href={`https://wa.me/${phoneNumber}?text=Hola,%20quisiera%20consultar%20por%20sus%20servicios`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl inline-block font-semibold"
-        >
-          Escribir por WhatsApp
-        </a>
-      </div>
-
-      {/* Email */}
-      <div className="bg-white rounded-2xl shadow-lg p-8">
-        <h4 className="font-semibold text-lg mb-2">
-          Email
-        </h4>
-
-        <p className="text-gray-600 mb-4">
-          También podés enviarnos tu consulta por correo.
-        </p>
-
-        <a
-          href="mailto:bernardifederico1517@gmail.com"
-          className="bg-black text-white px-6 py-3 rounded-xl inline-block font-semibold"
-        >
-          Enviar Email
-        </a>
-      </div>
-
-      {/* Ubicación */}
-      <div className="bg-white rounded-2xl shadow-lg p-8">
-        <h4 className="font-semibold text-lg mb-2">
-          Zona de trabajo
-        </h4>
-
-        <p className="text-gray-600">
-          Capilla del Señor<br/>
-          Exaltación de la Cruz<br/>
-          Provincia de Buenos Aires
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
         </div>
+
       </header>
 
       {/* Hero */}
@@ -330,7 +261,77 @@ rendimiento y soporte técnico directo.
           </div>
 
         </div>
+{/* Contacto */}
+<section id="contacto" className="py-24 px-6 bg-gray-50">
+  <div className="max-w-5xl mx-auto text-center">
 
+    <h3 className="text-3xl font-bold mb-6">
+      Contacto
+    </h3>
+
+    <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+      Si necesitás asesoramiento, instalación o presupuesto para internet,
+      cámaras de seguridad o redes, podés comunicarte directamente con nosotros.
+      Trabajamos en Capilla del Señor, Exaltación de la Cruz y zonas cercanas.
+    </p>
+
+    <div className="grid md:grid-cols-3 gap-8 text-center">
+
+      {/* WhatsApp */}
+      <div className="bg-white rounded-2xl shadow-lg p-8">
+        <h4 className="font-semibold text-lg mb-2">
+          WhatsApp
+        </h4>
+
+        <p className="text-gray-600 mb-4">
+          Atención directa para consultas y presupuestos.
+        </p>
+
+        <a
+          href={`https://wa.me/${phoneNumber}?text=Hola,%20quisiera%20consultar%20por%20sus%20servicios`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-xl inline-block font-semibold"
+        >
+          Escribir por WhatsApp
+        </a>
+      </div>
+
+      {/* Email */}
+      <div className="bg-white rounded-2xl shadow-lg p-8">
+        <h4 className="font-semibold text-lg mb-2">
+          Email
+        </h4>
+
+        <p className="text-gray-600 mb-4">
+          También podés enviarnos tu consulta por correo.
+        </p>
+
+        <a
+          href="mailto:bernardifederico1517@gmail.com"
+          className="bg-black text-white px-6 py-3 rounded-xl inline-block font-semibold"
+        >
+          Enviar Email
+        </a>
+      </div>
+
+      {/* Ubicación */}
+      <div className="bg-white rounded-2xl shadow-lg p-8">
+        <h4 className="font-semibold text-lg mb-2">
+          Zona de trabajo
+        </h4>
+
+        <p className="text-gray-600">
+          Capilla del Señor<br/>
+          Exaltación de la Cruz<br/>
+          Provincia de Buenos Aires
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
       </section>
 
     </div>
