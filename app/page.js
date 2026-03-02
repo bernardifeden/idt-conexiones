@@ -320,7 +320,27 @@ rendimiento y soporte técnico directo.
         <h4 className="font-semibold text-lg mb-2">
           Zona de trabajo
         </h4>
+{/* Mapa ubicación */}
+<div className="mt-16">
 
+  <h4 className="text-xl font-semibold mb-6 text-center">
+    Nuestra zona de trabajo
+  </h4>
+
+  <div className="rounded-2xl overflow-hidden shadow-lg">
+
+    <iframe
+      src="https://www.google.com/maps?q=Capilla%20del%20Se%C3%B1or%20Exaltacion%20de%20la%20Cruz%20Buenos%20Aires&output=embed"
+      width="100%"
+      height="350"
+      style={{ border: 0 }}
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+    ></iframe>
+
+  </div>
+
+</div>
         <p className="text-gray-600">
           Capilla del Señor<br/>
           Exaltación de la Cruz<br/>
