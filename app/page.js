@@ -163,7 +163,7 @@ export default function IDTConexiones() {
 
             {[
               {img:"bullet4MP.jpg",title:"IMOU Bullet 4MP",link:"https://meli.la/2Mf4wWP"},
-              {img:"bullet5MP.jpg",title:"IMOU Bullet 5MP",link:"https://meli.la/2Mf4wWP"},
+              {img:"bullet4MP.jpg",title:"IMOU Bullet 5MP",link:"https://meli.la/2Mf4wWP"},
               {img:"domo4y5mp.jpg",title:"IMOU Cruiser",link:"https://meli.la/1xWysps"},
               {img:"domodual.webp",title:"IMOU Cruiser Dual",link:"https://meli.la/2bNuHuU"},
               {img:"ranger4mp.webp",title:"IMOU Ranger 4MP",link:"https://meli.la/2vz4KWN"},
